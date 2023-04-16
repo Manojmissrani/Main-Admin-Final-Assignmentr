@@ -97,9 +97,6 @@ const Navbar = (props) => {
 
 
             {/* TOP NAVBAR  */}
-
-
-
             <div className='navbar2'>
                 <nav class="navbar navbar-expand-lg bg-body-tertiary">
                     <div class="container-fluid">
@@ -113,23 +110,35 @@ const Navbar = (props) => {
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                             <ul className="side-menu top mt-3">
-                                <li className={props.home} onClick={() => navigate("/")}>
-                                    <a>
-                                        <i class="fa-solid fa-house"></i>
-                                        <span className="text">Home</span>
-                                    </a>
+                                <li className={props.home + " " + "nav-item p-3"}>
+                                    <a class="nav-link" onClick={() => navigate("/")}>Home</a>
+                                </li>
+                                <li className={props.Approveduser + " " + "nav-item p-3"}>
+                                    <a class="nav-link" onClick={() => navigate("/Approveduser")}>Approved User</a>
+                                </li>
+                                <li className={props.Pendinguser + " " + "nav-item p-3"}>
+                                    <a class="nav-link" onClick={() => navigate("/Pendinguser")}>Pending User</a>
+                                </li>
+                                <li className={props.Rejecteduser + " " + "nav-item p-3"}>
+                                    <a class="nav-link" onClick={() => navigate("/Rejecteduser")}>Rejected User</a>
                                 </li>
 
-                            </ul>
-                            <ul className="side-menu">
-
-                                <li>
+                                <li className={props.Approvedpost + " " + "nav-item p-3"}>
+                                    <a class="nav-link" onClick={() => navigate("/Approvedpost")}>Approved Post</a>
+                                </li>
+                                <li className={props.pendingpost + " " + "nav-item p-3"}>
+                                    <a class="nav-link" onClick={() => navigate("/Pendingpost")}>Pending Post</a>
+                                </li>
+                                <li className={props.rejectedpost + " " + "nav-item p-3"}>
+                                    <a class="nav-link" onClick={() => navigate("/Rejectedpost")}>Rejected Post</a>
+                                </li>
+                                <l className={"nav-item p-3"} i>
                                     <a className="logout">
-                                        <i class="fa-solid fa-right-from-bracket fa-rotate-180 p fa-lg"></i>
-                                        <span className="text" onClick={props.Logout}>Logout</span>
+                                        <span className="text" onClick={Logout}>Logout</span>
                                     </a>
-                                </li>
+                                </l>
                             </ul>
+
                         </div>
                     </div>
                 </nav>

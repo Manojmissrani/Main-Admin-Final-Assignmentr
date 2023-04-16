@@ -3,10 +3,23 @@
 }
 @media screen and (max-width: 1000px) {
     .navbar2{
+        padding: 15px;
+        background-color: white;
         display: block;
     }
     #sidebar{
         display: none;
+    }
+    .bg-body-tertiary {
+        --bs-bg-opacity: 0;
+        background-color: rgba(var(--bs-tertiary-bg-rgb),var(--bs-bg-opacity))!important;
+    }
+    .active{
+        color: rgb(135, 165, 235);
+    }
+    .card{
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
     }
     #content>nav{
         display: none !important;

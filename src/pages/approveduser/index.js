@@ -57,7 +57,7 @@ const Approveduser = () => {
                 <div>  <Navbar Approveduser={"active"} Logout={Logout} />
                     <section id="content">
                         <nav>
-\                            <a className="nav-link">Categories</a>
+                            <a className="nav-link">Categories</a>
                             <form action="#">
                                 <div className="form-input">
                                     <input type="search" placeholder="Search..." />
