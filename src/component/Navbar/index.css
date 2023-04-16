@@ -1,0 +1,18 @@
+.navbar2{
+    display: none;
+}
+@media screen and (max-width: 1000px) {
+    .navbar2{
+        display: block;
+    }
+    #sidebar{
+        display: none;
+    }
+    #content>nav{
+        display: none !important;
+    }
+    #content{
+        width: 100% !important;
+        left: 0px !important;
+    }
+  }

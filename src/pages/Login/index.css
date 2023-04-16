@@ -1,0 +1,25 @@
+.form-container{
+    /* height:40vh; */
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    flex-direction: column;
+	background: #fff;
+}
+.bgcolorlogin{
+    background: #383a3d;
+    height: 100vh;
+	/* padding-top: 25vh;	 */
+}
+.form-container{
+	border-radius: 10px;
+	padding: 30px;
+}
+
+.container{
+    --bs-gutter-x: 0rem;
+}
+.form-control{
+    height: 50px;
+    margin-top: 5px;
+}

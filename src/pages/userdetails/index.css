@@ -1,0 +1,48 @@
+.bgwhite {
+    background-color: white;
+
+}
+
+.user-main-div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.user-main-div>div {
+    width: 50%;
+
+}
+
+.bx-shadow {
+    box-shadow: rgba(0, 0, 0, 0) 5px 19px 30px, rgba(0, 0, 0, 0.08) 0px 10px 12px;
+}
+
+.user-main-div>div>img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.userdetalsname>h6 {
+    font-size: x-large !important;
+}
+
+@media screen and (max-width: 890px) {
+    .user-main-div{
+        width: 100%;
+        flex-direction: column;
+    }
+    .user-main-div>div{
+        width: 100%;
+    }
+    .user-main-div>.p-5{
+        padding: 10px !important;
+    }
+    .bgwhite{
+        padding: 15px !important;
+    }
+
+}
+
